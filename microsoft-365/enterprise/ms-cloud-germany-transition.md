@@ -25,6 +25,7 @@ description: "Summary: Understand the migration from Microsoft Cloud Germany (Mi
 
 > [!NOTE]
 > This article only applies to eligible Microsoft Cloud Deutschland customers.
+> Microsoft Cloud Deutschland is referred to as MCD.
 
 In August 2018, Microsoft announced our intention to deliver the complete Microsoft cloud – Azure, Office 365, Dynamics 365, and Power Platform – from new cloud regions in Germany to better enable the digital transformation of our customers. In August 2019, we announced we are now in the process of opening of the new cloud regions in Germany. We have since announced the availability of Azure, Office 365, Dynamics 365, and Power Platform.
 
@@ -62,20 +63,20 @@ This figure represents the various components of Office 365 and Dynamics 365 in 
 
 ![Components of Office 365 and Dynamics 365 in the migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
-Migration is executed in phases that all start when you [opt-in for migration](https://aka.ms/office365germanymoveoptin). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
+Migration is executed in phases that all start when you [opt-in for migration](https://aka.ms/office365germanymoveoptin). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Examples of tasks may include customer-managed DNS updates, adjustment of the Exchange hybrid configuration, or coordinated migration of an Azure subscription where the Azure subscription is using the same Azure Active Directory partition as your Office 365 tenant.
 
-Migration does not immediately begin when opt-in occurs. Your organization is added to the list of tenants that are scheduled for later migration. You can begin the pre-work phases now as these are critical to ensure successful migration and usage upon completion:
+The Office 365 tenant migration does not immediately begin when opt-in occurs. Your organization is added to the list of Office 365 tenants that are scheduled for later migration. You can begin the pre-work phases now as these are critical to ensure successful migration and usage upon completion:
 
 - [Migration phases actions and impacts](ms-cloud-germany-transition-phases.md)
 - [Additional pre-work](ms-cloud-germany-transition-add-pre-work.md)
 
-One week prior to the start of the tenant migration, you will receive notice in the Message center service as a final warning that all prerequisites must be complete.
+One week prior to the start of the tenant migration, you will receive notice in the Message center service as a final warning that all migration prerequisites must be complete.
 
-The migration will move of your Azure AD tenant from the sovereign Germany Azure AD service to the Office 365 services instance of Azure AD in the EU region.
+The migration will move of your Azure AD identity and configuration partition from the sovereign MCD to the Office 365 services instance of Azure AD in the DE region.
 
 The next phase is the migration of your tenant&#39;s subscriptions and user licenses from Germany-specific products to global products.
 
-Once all steps are completed including customer Azure migration, your tenant is finalized in the Office 365 services service and migration is marked complete. At this point, the final update to Message center is provided to you. The tenant is now a fully global Office 365 organization.
+Once all steps are completed including an optional customer Azure subscription migration, your tenant is finalized in the Office 365 services service and migration is marked complete. At this point, the final update to Message center is provided to you. The Office 365 tenant has now all features and capabilities that are available in the Microsoft global Office 365 environment.
 
 You are notified of migration progress with Message center posts. The posts will occur at specific milestones and will provide guidance as to progress of a step as well as important information for customers to act on based on the process requirements. Message center notifications are provided at the following milestones:
 
@@ -192,7 +193,7 @@ There are currently 39 services available as part of Office 365 services in the 
 
 If you are an Azure customer only, you can begin [migrating](https://docs.microsoft.com/azure/germany/germany-migration-main) your Azure resources to another region today. 
 
-If you have Azure with Office 365, Dynamics 365, or Power BI, you must follow the migration process to ensure successful migration AzureAD before you begin the self-directed Azure migration. You must complete the Azure migration before the service closure in order to maintain your Azure workloads with your AzureAD, and Office 365 organization.
+If you have linked your Azure subscription with the same AzureAD identity partition that is used by Office 365, Dynamics 365, or Power BI, you must follow the migration process to ensure successful migration AzureAD before you begin the self-directed Azure migration. You must complete the Azure migration before the service closure in order to maintain your Azure workloads with your AzureAD, and Office 365 organization.
 
 **Office 365**
 
